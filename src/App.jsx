@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import './App.css'
-<<<<<<< HEAD
 import Navbar from './components/Navbar/Navbar';
 import SliderHeader from "./components/SliderHeader/SliderHeader";
 import AboutMe from './components/AboutMe/AboutMe'
@@ -20,32 +19,9 @@ function App() {
   const handleUserClick = (user) => {
     setUserShown(user);
   };
-=======
-import SliderHeader from "./components/SliderHeader/SliderHeader.jsx";
-import {useState} from "react";
 
-
-function App() {
-    const [scroll, setScroll] = useState(false);
->>>>>>> 27d51889ef462683dbd18d62da905d493c5194d0
-
-    const handleClick = () =>{
-        setScroll(!scroll);
-        if (scroll)
-        {
-            document.body.style.overflow = "hidden"
-
-        }
-        else if (!scroll)
-        {
-            document.body.style.overflow = "visible"
-        }
-    }
-
-
-    return (
+  return (
     <>
-<<<<<<< HEAD
     <div className='app'>
       <Navbar onNavClick={handleNavClick} onUserClick={handleUserClick}>
 
@@ -83,12 +59,8 @@ function App() {
         )}
       </div>
     </div>
-=======
-        <button onClick={handleClick}>CLICK ME</button>
-        <SliderHeader onClick={handleClick}/>
->>>>>>> 27d51889ef462683dbd18d62da905d493c5194d0
     </>
-    )
+  )
 }
 
 export default App
