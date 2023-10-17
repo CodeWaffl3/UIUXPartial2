@@ -1,7 +1,8 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import "./Navbar.css"
 
 function Navbar({ onNavClick, onUserClick }) {
+
     const [activeButton, setActiveButton] = useState('');
     const [activeUser, setActiveUser] = useState('');
 

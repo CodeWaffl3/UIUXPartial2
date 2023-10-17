@@ -1,4 +1,3 @@
-import React from 'react';
 import "./Gallery.css"
 import GalleryAlberto from './GalleryAlberto/GalleryAlberto';
 

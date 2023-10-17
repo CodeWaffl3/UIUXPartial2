@@ -1,4 +1,3 @@
-import React from 'react';
 import "./AboutMeAlberto.css"
 
 function AboutMeAlberto() {
