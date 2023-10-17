@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .main{
     flex: 1;
     background-color: orange;
@@ -6,37 +7,30 @@
 .side{
     width: 100vw;
     height: 94.7vh;
+=======
+.side{
+    width: 100vw;
+    height: 100vh;
+>>>>>>> 27d51889ef462683dbd18d62da905d493c5194d0
 
     position: absolute;
-    overflow: hidden;
-
-    display: grid;
-    place-items: center;
+    overflow-x: hidden;
 }
 
-.side .title{
-    font-family: "Montserrat", sans-serif;
-    vertical-align: center;
-    font-size: 7vw;
-    font-weight: 600;
-    text-align: center;
-}
 
 #left{
-    background-color: darkslategrey;
-    color: black;
-    z-index: 2;
+    z-index: 1;
 }
 
 #right{
-    background-color: black;
-    color: white;
+   z-index: 0;
 }
 
-.sliderWrapper {
+.sliderContainer {
     width: 100vw;
-    height: 100%;
+    min-height: 100%;
     color: #fff;
+<<<<<<< HEAD
     background-color: #CE8054;
     flex-flow: column;
     justify-content: space-between;
@@ -47,30 +41,13 @@
     bottom: 0;
     left: 0;
     right: 0;
+=======
+    background-color: var(--colorAlberto);
+>>>>>>> 27d51889ef462683dbd18d62da905d493c5194d0
 }
 
-.titleWrapper{
-    height: 100%;
-    flex-direction: row;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-.orange{
-    width: 100vw;
-    height: 100%;
-
-    flex-flow: column;
-    justify-content: space-between;
-    align-items: stretch;
-    display: flex;
-    position: absolute;
-    top: 0%;
-    bottom: 0%;
-    left: 0%;
-    right: 0%;
+.right{
     background-color: darkslategrey;
     color: black;
 }
+

@@ -1,8 +1,16 @@
 * {
   box-sizing: border-box;
   margin: 0;
+}
+
+:root{
+  --colorAlberto: #1b1a27;
+  --fontColorAlberto: white;
+  --fontColorGabriel: black;
+  --colorGabriel: darkslategrey;
 
 }
+
 
 #root {
   max-width: 1280px;
