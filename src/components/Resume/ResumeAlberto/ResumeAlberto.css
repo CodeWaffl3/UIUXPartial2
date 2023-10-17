@@ -1,0 +1,15 @@
+.resumeAlbertoContent{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #CE8054;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.resumeImgAlberto{
+    width: 40vw;
+    height: auto;
+    max-height: 80vh;
+}
