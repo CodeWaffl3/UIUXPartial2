@@ -1,5 +1,10 @@
 import "./Gallery.css"
 import GalleryAlberto from './GalleryAlberto/GalleryAlberto';
+import PropTypes from 'prop-types';
+
+Gallery.propTypes = {
+  activeUser: PropTypes.string.isRequired,
+};
 
 function Gallery({activeUser}) {
   return (

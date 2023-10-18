@@ -1,6 +1,10 @@
 import "./Projects.css"
 import ProjectsAlberto from './ProjectsAlberto/ProjectsAlberto';
+import PropTypes from 'prop-types';
 
+Projects.propTypes = {
+  activeUser: PropTypes.string.isRequired,
+};
 function Projects({ activeUser }) {
   return (
     <div className='projectsContent'>

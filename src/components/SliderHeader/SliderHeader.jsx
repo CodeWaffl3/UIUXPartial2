@@ -3,9 +3,6 @@ import "./SliderHeader.css"
 import GabrielSpecialName from '/images/Frame.svg'
 import PortafolioIntro from "../PortafolioIntro/PortafolioIntro.jsx";
 
-
-
-
 export default function SliderHeader() {
 
     const windowWidth = useRef(window.innerWidth);

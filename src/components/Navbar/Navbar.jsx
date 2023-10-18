@@ -1,8 +1,13 @@
 import {useState} from 'react';
 import "./Navbar.css"
+import PropTypes from 'prop-types';
+
+Navbar.propTypes = {
+    onNavClick: PropTypes.func.isRequired,
+    onUserClick: PropTypes.func.isRequired
+}
 
 function Navbar({ onNavClick, onUserClick }) {
-
     const [activeButton, setActiveButton] = useState('');
     const [activeUser, setActiveUser] = useState('');
 

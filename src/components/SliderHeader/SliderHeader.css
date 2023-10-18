@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .main{
     flex: 1;
     background-color: orange;
@@ -6,17 +5,10 @@
 
 .side{
     width: 100vw;
-    height: 94.7vh;
-=======
-.side{
-    width: 100vw;
     height: 100vh;
->>>>>>> 27d51889ef462683dbd18d62da905d493c5194d0
-
     position: absolute;
     overflow-x: hidden;
 }
-
 
 #left{
     z-index: 1;
@@ -30,7 +22,6 @@
     width: 100vw;
     min-height: 100%;
     color: #fff;
-<<<<<<< HEAD
     background-color: #CE8054;
     flex-flow: column;
     justify-content: space-between;
@@ -41,9 +32,6 @@
     bottom: 0;
     left: 0;
     right: 0;
-=======
-    background-color: var(--colorAlberto);
->>>>>>> 27d51889ef462683dbd18d62da905d493c5194d0
 }
 
 .right{

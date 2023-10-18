@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .app{
     display: flex;
     flex-direction: column;
@@ -11,7 +10,8 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-=======
+}
+
 body{
     overflow: hidden;
 }
@@ -19,5 +19,4 @@ body{
 .main{
     height: 100vh;
 
->>>>>>> 27d51889ef462683dbd18d62da905d493c5194d0
 }

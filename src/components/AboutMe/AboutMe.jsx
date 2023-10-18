@@ -1,5 +1,10 @@
 import "./AboutMe.css"
 import AboutMeAlberto from "./AboutMeAlberto/AboutMeAlberto"
+import PropTypes from 'prop-types';
+
+AboutMe.propTypes = {
+  activeUser: PropTypes.string.isRequired,
+};
 
 function AboutMe({ activeUser }) {
   return (

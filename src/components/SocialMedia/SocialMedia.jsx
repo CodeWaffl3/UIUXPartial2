@@ -1,6 +1,10 @@
-import React from 'react';
 import "./SocialMedia.css"
 import SocialMediaAlberto from './SocialMediaAlberto/SocialMediaAlberto';
+import PropTypes from 'prop-types';
+
+SocialMedia.propTypes = {
+  activeUser: PropTypes.string.isRequired,
+};
 
 function SocialMedia({activeUser}) {
   return (
