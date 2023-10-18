@@ -4,8 +4,6 @@ import GabrielSpecialName from '/images/Frame.svg'
 import PortafolioIntro from "../PortafolioIntro/PortafolioIntro.jsx";
 
 
-
-
 export default function SliderHeader({selectedPerson}) {
 
     const windowWidth = useRef(window.innerWidth);
@@ -17,17 +15,31 @@ export default function SliderHeader({selectedPerson}) {
         {
             return;
         }
-        
         const cursorPosition = ev.clientX / windowWidth.current * 100;
         setMousePosition({left: cursorPosition, top: ev.pageY});
     }
+
+    const handleStyleButton = (condition) => {
+        if (condition == "gabriel") {
+            return {
+                width:"0%"
+            }
+        }
+        else if (condition == "alberto"){
+            return {
+                width:"100%"
+            }
+        }
+
+    };
+
 
     return (
         <div onMouseMove={(event) => handleMouseMove(event)}
         >
 
             <div className="side" id="left" 
-            style={selectedPerson.scroll ? {transition: "all 100ms ease-out", width: mousePosition.left + "%"} : {}}>
+            style={selectedPerson.scroll ? {transition: "none", width: mousePosition.left + "%"} : handleStyleButton(selectedPerson.person)}>
                 <div className="sliderContainer">
                     <PortafolioIntro
                     />
