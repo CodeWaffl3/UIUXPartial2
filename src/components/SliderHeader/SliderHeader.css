@@ -4,6 +4,8 @@
 
     position: absolute;
     overflow-x: hidden;
+
+    transition: all 200ms ease-in-out;
 }
 
 
