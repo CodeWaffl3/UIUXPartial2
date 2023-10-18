@@ -6,6 +6,8 @@ import PortafolioIntro from "../PortafolioIntro/PortafolioIntro.jsx";
 
 export default function SliderHeader({selectedPerson}) {
 
+
+
     const windowWidth = useRef(window.innerWidth);
     const [mousePosition, setMousePosition] = useState({left: 50, top: 0});
     //const [side, setSide] = useState({name: "", magic:  false});
@@ -32,7 +34,6 @@ export default function SliderHeader({selectedPerson}) {
         }
 
     };
-
 
     return (
         <div onMouseMove={(event) => handleMouseMove(event)}
