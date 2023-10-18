@@ -4,9 +4,14 @@
     padding: 10px;
     flex: 1;
     background-color: #CE8054;
+    padding: 200px;
 }
 
 h1{
+    text-align: center;
+}
+
+h4{
     text-align: center;
 }
 
@@ -14,29 +19,17 @@ h1{
     display: flex;
     flex: 1;
     flex-direction: row;
-}
-
-.leftColumn{
-    display: flex;
-    flex-direction: column;
-    gap: 2%;
-    flex: 1;
-}
-
-.rightColumn{
-    display: flex;
-    flex-direction: column;
-    gap: 2%;
-    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .projectInfo{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2%;
-    border: solid;
+    gap: 20px;
     padding: 5px;
 }
 
