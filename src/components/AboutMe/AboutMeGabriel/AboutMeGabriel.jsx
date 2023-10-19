@@ -1,4 +1,5 @@
 import "./AboutMeGabriel.css"
+import myImageGabriel from "./AboutMeGabriel.jpg"
 
 export default function AboutMeGabriel() {
     const randomInfo =
@@ -9,8 +10,12 @@ export default function AboutMeGabriel() {
 
     return (
         <div className='aboutMeGabrielContent'>
-            <h1 className="aboutMeTitle">About Gabriel</h1>
-            <p>{randomInfo}</p>
+            <div className='aboutMeText'>
+                <h1 className="aboutMeTitle">About Gabriel</h1>
+                <p>{randomInfo}</p>
+            </div>
+
+            <img src={myImageGabriel} className="myImageGabriel" alt="Image Gabriel" />
         </div>
     );
 }
