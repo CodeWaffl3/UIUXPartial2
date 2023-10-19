@@ -1,38 +1,66 @@
+import { useState } from 'react';
 import './App.css'
-import SliderHeader from "./components/SliderHeader/SliderHeader.jsx";
-import ShowMoreOfButton from './components/ShowMoreOfButton/ShowMoreOfButton';
 import Navbar from './components/Navbar/Navbar';
-import {useState} from "react";
-
+import SliderHeader from "./components/SliderHeader/SliderHeader";
+import AboutMe from './components/AboutMe/AboutMe'
+import Resume from './components/Resume/Resume';
+import Projects from './components/Projects/Projects';
+import SocialMedia from './components/SocialMedia/SocialMedia';
+import Gallery from './components/Gallery/Gallery';
 
 function App() {
-    const [selectedPerson, setselectedPerson] = useState({scroll:false , person:false});
+  const [selectedPage, setselectedPage] = useState('Home');
+  const [userShown, setUserShown] = useState('');
 
-    const handleClick = (name) =>{
+  const handleNavClick = (content) => {
+    setselectedPage(content);
+  };
 
-        setselectedPerson({scroll: !selectedPerson.scroll, person: name, magic: !selectedPerson.magic});
+  const handleUserClick = (user) => {
+    setUserShown(user);
+  };
 
-        if (selectedPerson.scroll)
-        {
-            document.body.style.overflowY = "visible"
-        }
-        else if (selectedPerson.scroll == false)
-        {
-            document.body.style.overflowY = "hidden"
-        }
-         
-        
-    }
-
-    return (
+  return (
     <>
-    <button>HOLA MUNDO</button>
-        <Navbar transform={selectedPerson.scroll}/>
-        <ShowMoreOfButton onClick={handleClick} name={"gabriel"} top={"200px"} left={"20%"}/>
-        <ShowMoreOfButton onClick={handleClick} name={"alberto"} top={"200px"} left={"80%"}/>
-        <SliderHeader selectedPerson={selectedPerson}/>
+    <div className='app'>
+      <Navbar onNavClick={handleNavClick} onUserClick={handleUserClick}>
+
+      </Navbar>
+      <div className='mainContent'>
+        {selectedPage === 'Home' && (
+          <SliderHeader>
+
+          </SliderHeader>
+        )}
+        {selectedPage === 'AboutMe' && (
+          <AboutMe activeUser={userShown}>
+            
+          </AboutMe>
+        )}
+        {selectedPage === 'Resume' && (
+          <Resume activeUser={userShown}>
+
+          </Resume>
+        )}
+        {selectedPage === 'Projects' && (
+          <Projects activeUser={userShown}>
+
+          </Projects>
+        )}
+        {selectedPage === 'SocialMedia' && (
+          <SocialMedia activeUser={userShown}>
+
+          </SocialMedia>
+        )}
+        {selectedPage === 'Gallery' && (
+          <Gallery activeUser={userShown}>
+            
+          </Gallery>
+        )}
+      </div>
+    </div>
     </>
-    )
+  )
 }
 
 export default App

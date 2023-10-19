@@ -1,0 +1,15 @@
+.aboutMeGabrielContent{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #CE8054;
+    background-image: url("./images/Gradient-Background.svg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 210% 157%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}

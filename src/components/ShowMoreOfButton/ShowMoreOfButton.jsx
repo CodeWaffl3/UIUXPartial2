@@ -1,8 +1,13 @@
 import './ShowMoreOfButton.css'
+import PropTypes from 'prop-types';
 
-export default function ShowMoreOfButton({onClick, name, top, left}) {
+ShowMoreOfButton.propTypes = {
+  onClick: PropTypes.func.isRequired,
+  name: PropTypes.string.isRequired
+};
+export default function ShowMoreOfButton({onClick, name}) {
     return (
-        <div className='showMoreButton' onClick={()=>onClick(name)} style={{top: top, left:left}}>
+        <div className='showMoreButton' onClick={onClick}>
             Show More of {name}
         </div>
     );

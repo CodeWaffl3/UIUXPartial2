@@ -1,0 +1,41 @@
+.socialMediaAlbertoContent{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #CE8054;
+    background-image: url("./images/background-Alberto.svg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 210% 157%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.socialMedias{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.socialMediaInfo{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid;
+    background-color: lightgrey;
+    gap: 5%;
+}
+
+.socialMediaLogo{
+    height: 20vh;
+    width: auto;
+}
+
+.socialMediaLink{
+    text-align: center;
+    color: darkBlue;
+}

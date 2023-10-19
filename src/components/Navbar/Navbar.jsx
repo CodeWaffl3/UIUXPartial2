@@ -7,7 +7,7 @@ Navbar.propTypes = {
     onUserClick: PropTypes.func.isRequired
 }
 
-function Navbar({ onNavClick, onUserClick, transform}) {
+function Navbar({ onNavClick, onUserClick }) {
     const [activeButton, setActiveButton] = useState('');
     const [activeUser, setActiveUser] = useState('');
 
@@ -35,7 +35,7 @@ function Navbar({ onNavClick, onUserClick, transform}) {
         
     };
     return (
-        <div className="navbar" style={!transform ? {transform: "translateY(0%)"} : {transform: "translateY(-100%)"}}>
+        <div className="navbar">
             <button onClick={() => handleUserClick('Gabriel')} className={activeUser === 'Gabriel' ? 'gab' : 'iGab'}>Gabriel</button>
             <button disabled={activeUser === ''} onClick={() => handleNavClick('AboutMe')} className={(activeButton === 'AboutMe' ? 'active' : '') + (activeUser === 'Gabriel' ? ' bgab' : ' balb')}>About me</button>
             <button disabled={activeUser === ''} onClick={() => handleNavClick('Resume')} className={(activeButton === 'Resume' ? 'active' : '') + (activeUser === 'Gabriel' ? ' bgab' : ' balb')}>Resume</button>

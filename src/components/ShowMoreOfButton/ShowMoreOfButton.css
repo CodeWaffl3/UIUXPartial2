@@ -1,18 +1,7 @@
 .showMoreButton{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 3rem;
-    width: 10rem;
-    border-radius: 50px;
-    background-color: white;
-    color: black;
+    color: white;
     position: fixed;
-    left: 200px;
-    top: 100px;
+    right: 20px;
+    bottom: 20px;
     z-index: 1000;
-}
-
-.showMoreButton:hover{
-    cursor: pointer;
 }

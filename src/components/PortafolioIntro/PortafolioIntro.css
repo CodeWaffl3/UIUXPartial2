@@ -10,12 +10,21 @@
 .titleSection{
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
 }
 
 .title{
+    text-align: start;
     font-family: "Montserrat", sans-serif;
     font-size: 7vw;
+    width: 500px;
     font-weight: 200;
+}
+
+.specialName{
+    margin-left: 20px;
+    margin-top: -150px;
 }
 
 .photoSection{

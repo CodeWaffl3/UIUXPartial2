@@ -1,16 +1,28 @@
+.main{
+    position: relative;
+    flex: 1;
+    background-color: black;
+}
+
 .side{
+    background-image: url("./images/background-Alberto.svg");
     width: 100vw;
     height: 100vh;
 
+    overflow-y:hidden;
+
     position: absolute;
     overflow-x: hidden;
-
-    transition: all 200ms ease-in-out;
 }
-
 
 #left{
     z-index: 1;
+    background-image: url("./images/background-Alberto.svg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 #right{
@@ -18,14 +30,44 @@
 }
 
 .sliderContainer {
+    display: flex;
+
     width: 100vw;
     min-height: 100%;
-    color: #fff;
-    background-color: var(--colorAlberto);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: stretch;
+
+
+
+    color: #000000;
+    background-color: #CE8054;
+    background-image: url("./images/background-Alberto.svg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 210% 157%;
+
+
 }
 
-.right{
-    background-color: darkslategrey;
-    color: black;
+.sliderContainer.right{
+    color: white;
+    width: 100vw;
+    background-image: url("./images/Gradient-Background.svg");
+
+    background-color:aqua ;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 210% 157%;
+
+
 }
 

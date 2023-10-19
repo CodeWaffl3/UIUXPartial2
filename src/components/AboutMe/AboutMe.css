@@ -1,0 +1,10 @@
+.aboutMeContent{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.Gab{
+    flex: 1;
+    background-color: darkslategrey;
+}
