@@ -1,3 +1,13 @@
+@font-face {
+  font-family: Lemon Milk;
+  src: url("/fonts/LemonMilk/LEMONMILK-Light.otf");
+}
+
+@font-face {
+  font-family: Walkway;
+  src: url("/fonts/Walkway/Walkway UltraBold.ttf");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

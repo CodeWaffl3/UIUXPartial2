@@ -11,7 +11,7 @@ export default function PortafolioIntro({imgSource = "",persPhoto}) {
             </div>
 
             <div className="photoSection">
-                <img src={persPhoto} alt="Personal Photo" height={500} width={500}/>
+
             </div>
         </div>
     );

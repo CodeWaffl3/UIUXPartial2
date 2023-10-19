@@ -1,65 +1,83 @@
 .navbar {
-    background-color: #333;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+
+    background-image:linear-gradient(to bottom,rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0));
     color: white;
+    backdrop-filter: blur(10px);
+
     display: flex;
     justify-content: center;
     gap: 5%;
-    
+    z-index: 10;
 }
 
 .navbar button {
-    background: #333;
+    font-family: "Lemon Milk";
+    background: transparent;
     border: none;
     padding: 10px 15px;
     cursor: pointer;
-    font-weight: bold;
-    color: rgb(255,255,255,0.7);
-    transition: background-color 0.3s, color 0.3s;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s;
 }
 
 .navbar button:disabled{
-    background-color: #333;
-    color:#333;
+    opacity: 0;
     cursor: initial;
 }
 
 .navbar button:hover:enabled {
-    color: white;
-    background: #333;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .navbar button.iAlb{
-    background-color: #ce81549d;
+    border-style:none;
+    border-width: 1px;
+    border-bottom: none;
+    border-top: none;
+    /*background-color: rgba(47, 79, 79, 0.3);*/
+    /*border-color: rgba(47, 79, 79, 0.548);*/
+    color: rgba(255,255,255,1);
 }
 
 .navbar button.alb {
     color: white;
-    background-color: #CE8054;
+    background-color: rgba(0, 0, 0, 0.3);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
 .navbar button.iGab{
-    background-color: rgba(47, 79, 79, 0.548);
+    border-style:none;
+    border-width: 1px;
+    border-bottom: none;
+    border-top: none;
+    /*background-color: rgba(47, 79, 79, 0.3);*/
+    /*border-color: rgba(47, 79, 79, 0.548);*/
+    color: rgba(255,255,255,1);
 }
 
 
 .navbar button.gab {
     color: white;
-    background-color: darkslategrey;
+    background-color: rgba(0, 0, 0, 0.3);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
+.navbar button.balb {
+}
+
 .navbar button.active.balb{
-    color: #CE8054;
-    background: #333;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.15);
     pointer-events: none;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
 }
 
 .navbar button.active.bgab{
-    color: darkslategrey;
-    background: #333;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.15);
     pointer-events: none;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
 }

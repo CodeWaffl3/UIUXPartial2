@@ -1,7 +1,7 @@
 import {useRef, useState} from "react";
 import "./SliderHeader.css"
-import GabrielSpecialName from '/images/Frame.svg'
-import AlbertoSpecialName from '/images/FrameAlberto.svg'
+import GabrielSpecialName from '/images/Frame2.svg'
+import AlbertoSpecialName from '/images/FrameMayus.svg'
 import PortafolioIntro from "../PortafolioIntro/PortafolioIntro.jsx";
 
 export default function SliderHeader() {

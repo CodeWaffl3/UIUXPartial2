@@ -1,6 +1,7 @@
 import "./SocialMedia.css"
 import SocialMediaAlberto from './SocialMediaAlberto/SocialMediaAlberto';
 import PropTypes from 'prop-types';
+import SocialMediaGabriel from "./SocialMediaGabriel/SocialMediaGabriel.jsx";
 
 SocialMedia.propTypes = {
   activeUser: PropTypes.string.isRequired,
@@ -10,9 +11,7 @@ function SocialMedia({activeUser}) {
   return (
     <div className='socialMediaContent'>
         {activeUser === 'Gabriel' && (
-            <div>
-                <h1>About Me</h1>
-            </div>
+            <SocialMediaGabriel/>
         )}
         {activeUser === 'Alberto' && (
             <SocialMediaAlberto>

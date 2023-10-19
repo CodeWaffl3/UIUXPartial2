@@ -1,6 +1,7 @@
 import "./Projects.css"
 import ProjectsAlberto from './ProjectsAlberto/ProjectsAlberto';
 import PropTypes from 'prop-types';
+import ProjectsGabriel from "./ProjectsGabriel/ProjectsGabriel.jsx";
 
 Projects.propTypes = {
   activeUser: PropTypes.string.isRequired,
@@ -9,9 +10,7 @@ function Projects({ activeUser }) {
   return (
     <div className='projectsContent'>
         {activeUser === 'Gabriel' && (
-            <div>
-                <h1>About Me</h1>
-            </div>
+            <ProjectsGabriel/>
         )}
         {activeUser === 'Alberto' && (
             <ProjectsAlberto>

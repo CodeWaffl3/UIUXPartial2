@@ -1,6 +1,7 @@
 .IntroSection{
     position: relative;
-    display: flex;
+    display: grid;
+    place-content: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
@@ -16,15 +17,15 @@
 
 .title{
     text-align: start;
-    font-family: "Montserrat", sans-serif;
-    font-size: 7vw;
-    width: 500px;
+    font-family: "Lemon Milk";
+    font-size: 6.5vw;
+    width: 625px;
     font-weight: 200;
 }
 
 .specialName{
     margin-left: 20px;
-    margin-top: -150px;
+    margin-top: -160px;
 }
 
 .photoSection{
