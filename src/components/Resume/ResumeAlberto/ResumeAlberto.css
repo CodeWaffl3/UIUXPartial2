@@ -8,7 +8,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 210% 157%;
-
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -25,7 +24,13 @@
 }
 
 .resumeImgAlberto:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
     transition: transform 0.2s ease;
+}
+
+@media screen and (max-width:50em){
+    .resumeImgAlberto{
+        width: 80vw;
+    }
 }
   
