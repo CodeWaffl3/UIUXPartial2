@@ -1,9 +1,11 @@
 .IntroSection{
     position: relative;
-    display: grid;
-    place-content: center;
-    justify-content: center;
+    display: flex;
     flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    
     width: 100%;
     height: 100%;
 }
@@ -12,23 +14,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.8rem;
 }
 
 .title{
     text-align: start;
     font-family: "Lemon Milk";
     font-size: 6.5vw;
-    width: 800px;
+    width: fit-content;
     font-weight: 200;
 }
 
 .specialName{
-    margin-left: 20px;
-    margin-top: -160px;
+    margin-left: 40px;
+    margin-top:0;
+    width: 800px;
+    height: auto;
 }
 
 .photoSection{
     display: flex;
     justify-content: center;
+}
+
+.Portafolio{
+    position: relative;
+    margin:0 calc(1611 - 6.5vw);
+    text-align: start;
+    font-family: "Lemon Milk";
+    font-size: 6.5vw;
+    width: 800px;
+    font-weight: 200;
 }

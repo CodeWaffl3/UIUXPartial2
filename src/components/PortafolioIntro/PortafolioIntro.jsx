@@ -6,12 +6,11 @@ export default function PortafolioIntro({imgSource = "",persPhoto}) {
     return (
         <div className="IntroSection">
             <div className="titleSection">
-                <h1 className="title">Discover <span style={{marginLeft:"200px"}}>Portafolio.</span></h1>
+                <h1 className="title">Discover</h1>
                 <img className="specialName" src={imgSource} alt="Special name"/>
             </div>
-
-            <div className="photoSection">
-
+            <div className="titleSection">
+                <h1 className="Portafolio">Portafolio.</h1>
             </div>
         </div>
     );
