@@ -1,4 +1,5 @@
 import "./AboutMeAlberto.css"
+import profileImage from "./yo.jpg"
 
 function AboutMeAlberto() {
     const randomInfo = [
@@ -11,12 +12,15 @@ function AboutMeAlberto() {
       ];
     return (
         <div className='aboutMeAlbertoContent'>
-            <h1>About Alberto</h1>
-            <p>{randomInfo[0]}</p>
-            <p>{randomInfo[1]}</p>
-            <p>{randomInfo[2]}</p>
-            <p>{randomInfo[3]}</p>
-            <p>{randomInfo[4]}</p>
+            <div className="textContent">
+                <h1>About Alberto</h1>
+                <p>{randomInfo[0]}</p>
+                <p>{randomInfo[1]}</p>
+                <p>{randomInfo[2]}</p>
+                <p>{randomInfo[3]}</p>
+                <p>{randomInfo[4]}</p>
+            </div>
+            <img className="profileImg" src={profileImage} alt="Profile Alberto" />
         </div>
     );
 }

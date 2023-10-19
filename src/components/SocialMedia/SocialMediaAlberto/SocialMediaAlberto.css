@@ -11,7 +11,7 @@
 .socialMedias{
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    gap: 5%;
 }
 
 .socialMediaInfo{
@@ -23,14 +23,26 @@
     border: solid;
     background-color: lightgrey;
     gap: 5%;
+    padding: 10px;
 }
 
 .socialMediaLogo{
-    height: 20vh;
-    width: auto;
+    height: auto;
+    width: 10vw;
 }
 
 .socialMediaLink{
     text-align: center;
     color: darkBlue;
+}
+
+@media screen and (max-width: 70em){
+    .socialMedias{
+        flex-direction: column;
+        gap: 1%;
+    }
+
+    .socialMediaLogo{
+        width: 10vh;
+    }
 }

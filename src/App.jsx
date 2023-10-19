@@ -23,9 +23,8 @@ function App() {
   return (
     <>
     <div className='app'>
-      <Navbar onNavClick={handleNavClick} onUserClick={handleUserClick}>
+      <Navbar onNavClick={handleNavClick} onUserClick={handleUserClick}/>
 
-      </Navbar>
       <div className='mainContent'>
         {selectedPage === 'Home' && (
           <SliderHeader>

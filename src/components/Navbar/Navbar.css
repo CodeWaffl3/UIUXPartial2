@@ -4,6 +4,9 @@
     display: flex;
     justify-content: center;
     gap: 5%;
+    width: 100%;
+    max-width: 100%;
+    min-height: 5vh;
     
 }
 
@@ -62,4 +65,14 @@
     background: #333;
     pointer-events: none;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width:50em){
+    .navbar{
+        flex-direction: column;
+    }
+
+    .navbar button{
+        display: none;
+    }
 }
