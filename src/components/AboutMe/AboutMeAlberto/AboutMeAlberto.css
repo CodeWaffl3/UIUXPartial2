@@ -34,6 +34,7 @@
 
 p{
     font-size: larger;
+    font-family: "Montserrat", sans-serif;
 }
 
 @media screen and (max-width: 70em){
