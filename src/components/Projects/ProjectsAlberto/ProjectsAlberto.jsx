@@ -7,7 +7,6 @@ import cGameImage from "./Images/lluviaDePalabras.png"
 function ProjectsAlberto() {
   return (
     <div className='projectsAlbertoContent'>
-        <h1>Projects Alberto</h1>
         <div className='projectsGrid'>
             <div className='projectInfo'>
                 <h4>

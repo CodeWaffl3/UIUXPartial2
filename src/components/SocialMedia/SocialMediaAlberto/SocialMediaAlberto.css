@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
+    padding: 1%;
 }
 
 .socialMedias{
@@ -24,6 +25,8 @@
     background-color: lightgrey;
     gap: 5%;
     padding: 10px;
+    max-width: 100%;
+    border-radius: 20%;
 }
 
 .socialMediaLogo{

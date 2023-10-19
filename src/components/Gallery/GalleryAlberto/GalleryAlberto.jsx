@@ -7,7 +7,6 @@ import personalImage3 from "./Images/me3.jpg"
 function GalleryAlberto() {
   return (
     <div className='galleryAlbertoContent'>
-        <h1>Gallery Alberto</h1>
         <div className='galleryGrid'>
             <div className='leftColumn'>
                 <img className='personalImage' src={personalImage} alt="Personal Image" />
