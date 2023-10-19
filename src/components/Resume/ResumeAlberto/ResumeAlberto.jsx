@@ -1,10 +1,9 @@
 import "./ResumeAlberto.css";
-import resumeImgAlberto from "./CV.png";
+import resumeImgAlberto from "./cv.png";
 
 function ResumeAlberto() {
   return (
     <div className='resumeAlbertoContent'>
-        <h1>Resume Alberto</h1>
         <img className='resumeImgAlberto' src={resumeImgAlberto} alt="Resume Alberto" />
     </div>
   );

@@ -1,6 +1,6 @@
 .aboutMeAlbertoContent{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex: 1;
     background-color: #CE8054;
     background-image: url("./images/background-Alberto.svg");
@@ -13,8 +13,33 @@
     gap: 10px;
 }
 
+.aboutMeText{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .aboutMeTitle{
     font-family:"Lemon Milk";
     font-size: 10rem;
     /*transform:  translate(-300px,50px) rotate(-90deg);*/
+}
+
+.myImage{
+    width: 30vw;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 20%;
+}
+
+p{
+    font-size: larger;
+    font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 70em){
+    .aboutMeAlbertoContent{
+        flex-direction: column-reverse;
+        gap: 2%;
+    }
 }

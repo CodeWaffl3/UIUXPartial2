@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding: 100px;
     background-color: #CE8054;
     background-image: url("./images/background-Alberto.svg");
 
@@ -15,10 +14,11 @@
     display: flex;
     flex: 1;
     flex-direction: row;
+    gap: 7%;
+    justify-content: center;
 }
 
 .leftColumn{
-    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,7 +27,6 @@
 }
 
 .rightColumn{
-    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,12 +35,38 @@
 }
 
 .personalImage{
-    border-radius: 50%;
-    width: 20vw;
+    border-radius: 10px;
+    width: 25vw;
     height: auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    border: 2px solid #555;
 }
 
 .personalImage:hover {
     transform: scale(1.5);
     transition: transform 0.2s ease;
+}
+
+@media screen and (max-width: 50em){
+    .galleryAlbertoContent{
+        padding: 0;
+    }
+
+    .galleryGrid{
+        flex-direction: column;
+        gap: 5vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .leftColumn{
+        gap: 5vh;
+    }
+    .rightColumn{
+        gap: 5vh;
+    }
+
+    .personalImage{
+        width: 50vw;
+    }
 }
