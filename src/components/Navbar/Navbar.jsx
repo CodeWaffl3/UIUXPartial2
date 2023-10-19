@@ -41,7 +41,6 @@ function Navbar({ onNavClick, onUserClick }) {
             <button disabled={activeUser === ''} onClick={() => handleNavClick('Resume')} className={(activeButton === 'Resume' ? 'active' : '') + (activeUser === 'Gabriel' ? ' bgab' : ' balb')}>Resume</button>
             <button disabled={activeUser === ''} onClick={() => handleNavClick('Projects')} className={(activeButton === 'Projects' ? 'active' : '') + (activeUser === 'Gabriel' ? ' bgab' : ' balb')}>Projects</button>
             <button disabled={activeUser === ''} onClick={() => handleNavClick('SocialMedia')} className={(activeButton === 'SocialMedia' ? 'active' : '') + (activeUser === 'Gabriel' ? ' bgab' : ' balb')}>Social Media</button>
-            <button disabled={activeUser === ''} onClick={() => handleNavClick('Gallery')} className={(activeButton === 'Gallery' ? 'active' : '') + (activeUser === 'Gabriel' ? ' bgab' : ' balb')}>Gallery</button>
             <button onClick={() => handleUserClick('Alberto')} className={activeUser === 'Alberto' ? 'alb' : 'iAlb'}>Alberto</button>
         </div>
     );

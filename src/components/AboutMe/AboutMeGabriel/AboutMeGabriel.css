@@ -1,14 +1,24 @@
 .aboutMeGabrielContent{
+    font-family: "Walkway";
+    font-size: 1.5rem;
     color: white;
     display: flex;
+    flex-direction: row;
+    flex: 1;
     background-color: #CE8054;
-
+    background-image: url("./images/Gradient-Background.svg");
 
     background-position: center;
     background-repeat: no-repeat;
-
-
+    background-size: 210% 157%;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
+}
+
+.aboutMeText{
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -20,6 +30,7 @@
 .myImageGabriel{
     width: 20vw;
     height: auto;
+    margin-left: 10px;
     margin-right: 20px;
-    border-radius: 20%;
+    border-radius: 50px;
 }

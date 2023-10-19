@@ -5,8 +5,8 @@ export default function AboutMeGabriel() {
     const randomInfo =
         `I love story telling, and design.
         I play video games, volleyball, and sing opera on my free time.
-        I enjoy cooking and tea. I like 3D modelling, rigging, web design,
-        video game design, animating, etc.`
+        I enjoy cooking and drinking tea. I like 3D modelling, rigging, web design,
+        video game design, animation, etc.`
 
     return (
         <div className='aboutMeGabrielContent'>

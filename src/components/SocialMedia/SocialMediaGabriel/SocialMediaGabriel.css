@@ -1,4 +1,4 @@
-.aboutMeGabrielContent{
+.socialMediaGabriel{
     font-family: "Walkway";
     font-size: 1.5rem;
     color: white;
@@ -14,4 +14,33 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+}
+
+.titleSocialMedia{
+    text-align: start;
+    font-family: "Lemon Milk";
+    font-size: 6.5vw;
+    width: fit-content;
+    font-weight: 200;   
+}
+
+.socials{
+    display: flex;
+    gap: 1.5rem;
+}
+
+
+.socialContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    height: 10rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+
+    backdrop-filter: blur(10px);
+
+    justify-content: center;
+    align-items: center;
 }
