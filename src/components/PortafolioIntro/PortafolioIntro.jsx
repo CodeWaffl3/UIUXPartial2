@@ -10,7 +10,7 @@ export default function PortafolioIntro({imgSource = "",persPhoto}) {
                 <img className="specialName" src={imgSource} alt="Special name"/>
             </div>
             <div className="titleSection">
-                <h1 className="Portafolio">Portafolio.</h1>
+                <h1 className="Portafolio">Portfolio.</h1>
             </div>
         </div>
     );
